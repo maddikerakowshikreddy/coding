@@ -1,0 +1,35 @@
+import static org.junit.jupiter.api.Assertions.*;
+
+import org.junit.jupiter.api.Test;
+
+class ShapesTest {
+
+	@Test
+	void test() {
+		assertEquals(10,10);
+	}
+	
+	
+	@Test
+	void testcompute()
+	{
+		Shapes s=new Shapes();
+		assertEquals(4,s.computeSquareArea(2));
+	}
+	
+	@Test
+	void testcomputeMessage()
+	{
+		Shapes s=new Shapes();
+		assertEquals(4,s.computeSquareArea(2),"failed");
+	}
+	
+	
+	@Test
+	void testcomputecirlceMessage()
+	{
+		Shapes s=new Shapes();
+		assertEquals(5,s.computeCircleArea(2.0),"failed");
+	}
+	
+}

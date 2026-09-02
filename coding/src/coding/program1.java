@@ -1,0 +1,32 @@
+package coding;
+
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.StandardOpenOption;
+
+public class program1 {
+
+	public static void main(String[] args) throws Exception {
+		Path a=Path.of("data1.txt");
+		if(Files.exists(a))
+		{
+			System.out.println(Files.readString(a));
+			String n="maddikera kowshik reddy1";
+			Files.writeString(a, n, 
+	                StandardOpenOption.CREATE, 
+	                StandardOpenOption.TRUNCATE_EXISTING);
+			System.out.println(Files.readString(a));
+		}
+		else
+		{
+			Files.createFile(a);
+			String n="maddikera kowshik reddy";
+			Files.writeString(a, n);
+			System.out.println(Files.readString(a));
+		}
+	
+		
+		
+	}
+
+}

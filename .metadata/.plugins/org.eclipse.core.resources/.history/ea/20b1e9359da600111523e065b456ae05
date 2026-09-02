@@ -1,0 +1,9 @@
+
+public class Shapes 
+{
+	public double computesSquares(double a,double b)
+	{
+		return a*b;
+	}
+
+}

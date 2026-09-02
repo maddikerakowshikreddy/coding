@@ -1,0 +1,26 @@
+import static org.junit.jupiter.api.Assertions.*;
+
+import org.junit.jupiter.api.Test;
+
+class SortingTest {
+
+	@Test
+	void test() {
+		
+		int[] arr= null;
+		Sorting s=new Sorting();
+		
+			int[] a=s.sorts(arr);
+		
+	}
+	
+	
+	@Test
+	void testthrows() {
+		
+		int[] arr= null;
+		Sorting s=new Sorting();
+		assertThrows(Exception.class,()->s.sorts(arr));
+	}
+
+}
