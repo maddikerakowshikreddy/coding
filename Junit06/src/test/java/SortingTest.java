@@ -7,7 +7,7 @@ class SortingTest {
 	@Test
 	void test() {
 		
-		int[] arr= null;
+		int[] arr= {54,32,4,3,1,2};
 		Sorting s=new Sorting();
 		try
 		{
